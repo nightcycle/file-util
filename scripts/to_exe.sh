@@ -1,1 +1,1 @@
-pyinstaller --onefile src/__init__.py -n exe_name_here
+pyinstaller --onefile app/__init__.py -n file-util

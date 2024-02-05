@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import os
 import base64
 import subprocess
+import sys
 
 app = Flask(__name__)
 
@@ -99,5 +100,5 @@ def proxy_server():
 		else:
 			return 'Invalid operation', 400
 
-if __name__ == '__main__':
+if __name__ == '__main__' and sys.argv[1] == "run":
     app.run(port=3090)

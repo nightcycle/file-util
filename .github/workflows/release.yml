@@ -209,7 +209,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          upload_url: ${{ needs.create_release.outputs.upload_url }}
+          upload_url: ${{ needs.get_published_release.outputs.upload_url }}
           asset_path: dist-zip/file-util${{ matrix.zip_suffix }}.zip
           asset_name: file-util${{ matrix.zip_suffix }}.zip
           asset_content_type: ${{ matrix.asset_content_type }}

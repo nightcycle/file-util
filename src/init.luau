@@ -1,4 +1,5 @@
 --!strict
+--!native
 -- https://gist.github.com/MrChickenRocket/6c6ca8795822172f051eb98c088a7264
 -- Services
 local HttpService = game:GetService("HttpService")
